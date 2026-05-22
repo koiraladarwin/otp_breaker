@@ -54,7 +54,7 @@ func main() {
 		go app.callRequest(i, otp, &wg)
 	}
 
-	app.generateOtp(otp) //if you run this as gorotine add wg.Add(1) for this too
+	app.generateOtp(otp) 
 
 	wg.Wait()
 }
